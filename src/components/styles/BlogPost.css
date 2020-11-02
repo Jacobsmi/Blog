@@ -3,7 +3,8 @@
     margin-right: auto;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    width: 80vw;
+    width: 65vw;
+    height: auto;
     border: 2px black solid;
     padding: 2vh;
 }
@@ -12,6 +13,6 @@
 }
 .post-body{
     font-size: 2vh;
-    width: 70vw;
+    width: 60vw;
     margin: 0 auto;
 }

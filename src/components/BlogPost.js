@@ -5,7 +5,7 @@ class BlogPost extends React.Component{
         return(
             <div className='BlogPost'>
                 <h2 className='post-title'>{this.props.title}</h2>
-                <p className='post-body'>{this.props.body}</p>
+                <div className='post-body'>{this.props.body}</div>
             </div>
         )
     }

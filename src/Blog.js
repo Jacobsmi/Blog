@@ -1,6 +1,7 @@
 import React from "react";
 import BlogHeader from './components/BlogHeader';
-import BlogPost from './components/BlogPost'
+import BlogPost from './components/BlogPost';
+import BlogSubjects from './components/BlogSubjects';
 
 export default class Blog extends React.Component{
     constructor(props){
@@ -22,6 +23,7 @@ export default class Blog extends React.Component{
         return (
             <div className="Blog">
                 <BlogHeader />
+                <BlogSubjects />
                 {this.state.posts.map(post=>{
                     return(<BlogPost key={post.id} title={post.title} body={post.body}/>)
                 })}
