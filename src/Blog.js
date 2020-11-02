@@ -19,12 +19,11 @@ export default class Blog extends React.Component{
         })
     }
     render(){
-        console.log("POSTS STATE", this.state.posts)
         return (
             <div className="Blog">
                 <BlogHeader />
                 {this.state.posts.map(post=>{
-                    return(<BlogPost key={post.id} title={post.title} />)
+                    return(<BlogPost key={post.id} title={post.title} body={post.body}/>)
                 })}
             </div>
         );
