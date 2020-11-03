@@ -5,6 +5,7 @@ class BlogPost extends React.Component{
         return(
             <div className='BlogPost'>
                 <h2 className='post-title'>{this.props.title}</h2>
+                <div className='post-tags'>Tags: {this.props.subjects}</div>
                 <div className='post-body'>{this.props.body}</div>
             </div>
         )

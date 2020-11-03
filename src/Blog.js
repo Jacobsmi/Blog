@@ -25,7 +25,7 @@ export default class Blog extends React.Component{
                 <BlogHeader />
                 <BlogSubjects />
                 {this.state.posts.map(post=>{
-                    return(<BlogPost key={post.id} title={post.title} body={post.body}/>)
+                    return(<BlogPost key={post.id} title={post.title} body={post.body} subjects={post.subjects} />)
                 })}
             </div>
         );

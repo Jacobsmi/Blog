@@ -4,9 +4,13 @@ import './styles/BlogSubjects.css';
 class BlogSubjects extends React.Component {
     constructor(props) {
         super(props)
+        this.handleClick = this.handleClick.bind(this);
         this.state = {
-            subjects: []
+            subjects: [],
         }
+    }
+    handleClick(subject){
+        
     }
     componentDidMount() {
         var unique_subjects = new Set()
@@ -32,7 +36,10 @@ class BlogSubjects extends React.Component {
             <div className='BlogSubjects'>
                 <div id='SubjectsHeader'>Topics</div>
                 {this.state.subjects.map(subject=>{
-                    return(<div className='Subject' key={subject}>{subject}</div>);
+                    return(<div className='Subject' key={subject}>
+                        <input type='checkbox' id={subject + '-input'} value={subject} onChange={this.handleChange}/>
+                        <label htmlFor={subject + '-input'}>{subject}</label>
+                    </div>);
                 })}
             </div>
         );
