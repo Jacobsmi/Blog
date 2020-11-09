@@ -1,9 +1,9 @@
 import React from "react";
-import BlogHeader from './components/BlogHeader';
-import BlogPost from './components/BlogPost';
-import BlogSubjects from './components/BlogSubjects';
-import filterPosts from "./components/utils/filterPosts";
-import toggleValue from './components/utils/toggleValue'
+import BlogHeader from './BlogHeader';
+import BlogPost from './BlogPost';
+import BlogSubjects from './BlogSubjects';
+import filterPosts from "./utils/filterPosts";
+import toggleValue from './utils/toggleValue'
 
 export default class Blog extends React.Component{
     constructor(props){
